@@ -47,8 +47,3 @@ a {
     display: block;
     padding-top: 10px;
 }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .container-two {
-    display: inline;
-  }
