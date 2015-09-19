@@ -1,8 +1,18 @@
+body {
+    background-color: orange;
+}
+
 .container {
     display: inline-block;
     border: 1px solid black;
-    margin:0 40px 0 40px;
     width: 100%;
+}
+
+.container-two {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
 }
 
 a {
@@ -18,15 +28,17 @@ a {
     border: 1px solid black;
     background-color: pink;
     height: 15%;
+    width: 100%;
 }
 
 .first-column {
     display: inline-block;
     border: 1px solid black;
-    width: 69%;
+    width: 65%;
     float: left;
     background-color: violet;
-    height: auto;
+    height: 100%;
+    padding: 10px;
 }
 
 .second-column {
@@ -34,9 +46,16 @@ a {
     float: left;
     background-color: teal;
     height: 100%;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 .first-column a {
     display: block;
     padding-top: 10px;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-two {
+    display: inline;
+  }
